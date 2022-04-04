@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/* reset */
+html {-webkit-text-size-adjust: none; text-size-adjust: none;}
+body {margin: 0;}
+h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, p {margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700;}
+a {color: inherit; text-decoration: inherit;}
+li {list-style: none;}
+img {vertical-align: middle; max-width: 100%;}
+address, em, i, cite {font-style: normal;}
+table {border-collapse: collapse;}
+table caption {overflow: hidden; width: 0; height: 0;}
+i[class^="fa"] {position: relative; vertical-align: middle;}
+i[class^="fa"] span {position: absolute; left: -9999px;}
+.ir-hidden {position: absolute; left: -9999px;}
+
+
+/* common */
+body {font-family: 'NotoSansKR', 'Apple SD Gothic Neo', '맑은 고딕', Malgun Gothic, '돋움', Dotum, Helvetica, AppleGothic, sans-serif; font-size: 13px; font-weight: 400; color: #3e4855; background-color: #ffffff;}
+#wrapper {position:relative; padding: 70px 0 0 240px; box-sizing: border-box; overflow: hidden;}
+#skip-nav {position: fixed; left: 0; top: -40px; width: 100%; line-height: 40px; text-align: center; background-color: rgba(0, 0, 0, 0.5); color: #ffffff; font-size: 16px; transition: top 0.3s; z-index: 100000;}
+#skip-nav:focus {top: 0;}
+
+/* common */
+a.btn.small {background-color: #00bca4; font-size: 13px; color: #fff; display: inline-block; line-height: 28px; padding: 0 10px; border-radius: 3px; border: 1px solid #00a792; box-sizing: border-box; transition: background-color 0.3s;}
+a.btn.small:hover {background-color: #00a792;}
+
+/* common - header */
+#header {position: fixed; left: 0; top: 0; width: 100%; height: 70px; background-image: linear-gradient(154deg, #9f6a66 0, #f7b771 100%); z-index: 10000;}
+#header > div.logo {position: absolute; left: 0; top: 0; width: 240px; height: 100%; background-color: rgba(1,1,1,0.1);}
+#header h1 {background-color: green; position: absolute; left: 20px; top: 50%; transform: translate(0, -50%);}
+#header > div.user {background-color: skyblue; position: absolute; left: 270px;top: 50%; transform: translateY(-50%);}
+#header > div.user > * {vertical-align: middle; display: inline-block;}
+#header > div.user > span.photo {background-color: pink;width: 36px; height: 36px;border-radius: 100px; text-indent: -999px; overflow: hidden; display: inline-block;}
+
+
+
+
+
+/* 로그인 페이지 */
+body.login {background: url('../img/blurred-bg-3.jpg') center center no-repeat; width: 100%; height: 100vh; position: relative;}
+body.login #login-box {position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%);  background-color: skyblue; width: 460px; box-sizing: border-box; border-radius: 3px; background-color: #fff;}
+body.login #login-box > h1 {padding-left: 65px; padding-top: 15px; padding-bottom: 15px; opacity: 0.7; position: relative; overflow: hidden; box-sizing: border-box;}
+body.login #login-box > h1 > span {display: block; font-size: 13px; position: relative;}
+body.login #login-box > h1 > span.icon {display: inline-block; position: absolute; left: 0; top: 0; width: 50px; height: 100%; text-align: center; line-height: 30px; border-right: 1px solid #ebebeb; padding: 15px; box-sizing: border-box;}
+body.login #login-box > h1 > span.icon > i {}
+body.login #login-box > h1 > span > small {display: block; color: #777; padding-top: 5px;  box-sizing: border-box;}
+body.login #login-box > h1 >  a.btn.small {position: absolute; right: 15px; top: 15px;}
+body.login #login-box > div.form-box { padding: 15px; box-sizing: border-box; border-top: 1px solid #ebebeb;}
+body.login #login-box > ul.form {padding-top: 15px;}
+body.login #login-box  ul.form > li > input {background-color: #fff; display: inline-block; margin: 0; padding: 6px 12px; border: 1px solid #dfe8f1; border-radius: 3px; height: 30px; width: 100%; box-sizing: border-box; font-family: inherit; font-size: 13px; color: #777; opacity: 0.7;}
+body.login #login-box  ul.form > li + li {padding-top: 15px;}
+body.login #login-box  div.button-box {text-align: center;}
+body.login #login-box  div.button-box > p {font-size: 13px; color: #8da0aa; margin: 15px 0; font-weight: 700; text-align-last: left;}
+body.login #login-box  div.button-box > a {background:#2ecc71;  display: block; width: 100%;padding: 6px 0; border-radius: 3px; font-size: 14px; color: #fff; font-weight: 700; transition: all 0.3s;}
+body.login #login-box  div.button-box:hover > a {background-color: #00bca4;}
+
+/* design layout */
